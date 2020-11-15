@@ -34,7 +34,7 @@ def create_inception_graph(pth):
     """Creates a graph from saved GraphDef file."""
     # Creates graph from saved graph_def.pb.
     with tf.io.gfile.GFile(pth, 'rb') as f:
-        graph_def = tf.compat.v1.GraphDef()
+        graph_def = tf.GraphDef()
         graph_def.ParseFromString(f.read())
         _ = tf.import_graph_def(graph_def, name='FID_Inception_Net')
 
