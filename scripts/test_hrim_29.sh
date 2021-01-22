@@ -19,7 +19,7 @@
 # the same place, but if you use both commands below they'll be split up.
 # %N is the hostname (if used, will create output(s) per node).
 # %j is jobid.
-#SBATCH --output=./logs/slurm.test_hrim_x16_36.out
+#SBATCH --output=./logs/slurm.test_hrim_x16_29.out
 ##SBATCH -e slurm.%N.%j.err    # STDERR
 
 #SBATCH --mail-user=niopeng@hotmail.com
@@ -47,8 +47,8 @@ conda activate py37
 export PYTHONUNBUFFERED=1
 
 # Do all the research.
-cp /scratch/nio/srim/HyperRIM/results/Test_HyperRIM_x16_36/n01531178_test_fid/*.png /scratch/nio/srim/HyperRIM/results/Test_HyperRIM_x16_36/n01531178_fid/
-python fid.py /scratch/nio/srim/HyperRIM/results/Test_HyperRIM_x16_36/n01531178_fid/ /project/6054857/nio/srim/data/n01531178_512/ --gpu 0 -i /project/6054857/nio/srim/TTUR/
+cp /scratch/nio/srim/HyperRIM/results/Test_HyperRIM_x16_29/n02279972_test_fid/*.png /scratch/nio/srim/HyperRIM/results/Test_HyperRIM_x16_29/n02279972_fid/
+python fid.py /scratch/nio/srim/HyperRIM/results/Test_HyperRIM_x16_29/n02279972_fid/ /project/6054857/nio/srim/data/n02279972_512/ --gpu 0 -i /project/6054857/nio/srim/TTUR/
 
 # Print completion time.
 date
