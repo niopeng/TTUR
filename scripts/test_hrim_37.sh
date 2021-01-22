@@ -13,7 +13,7 @@
 
 # Uncomment this to have Slurm cd to a directory before running the script.
 # You can also just run the script from the directory you want to be in.
-#SBATCH -D /project/6054857/nio/srim/HyperRIM/codes/
+#SBATCH -D /project/6054857/nio/srim/TTUR/
 
 # Uncomment to control the output files. By default stdout and stderr go to
 # the same place, but if you use both commands below they'll be split up.
