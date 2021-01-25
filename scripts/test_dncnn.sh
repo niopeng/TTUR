@@ -48,7 +48,7 @@ export PYTHONUNBUFFERED=1
 
 # Do all the research.
 #cp /scratch/nio/srim/HyperRIM/results/Test_HyperRIM_x16_25/n07745940_test_fid/*.png /scratch/nio/srim/HyperRIM/results/Test_HyperRIM_x16_25/n07745940_fid/
-python fid.py /project/6054857/nio/srim/DnCNN/results/RAISE-1K_1_fid_dncnn_2/ /project/6054857/nio/srim/data/RAISE-1K/ --gpu 0 -i /project/6054857/nio/srim/TTUR/
+python fid.py /project/6054857/nio/srim/DnCNN/results/RAISE-1K_1_fid_dncnn_25/ /project/6054857/nio/srim/data/RAISE-1K/ --gpu 0 -i /project/6054857/nio/srim/TTUR/
 
 # Print completion time.
 date
