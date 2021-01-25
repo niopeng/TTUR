@@ -4,7 +4,7 @@
 
 #SBATCH --time=0-3:00:0  # Time: D-H:M:S
 #SBATCH --account=def-keli # Account
-#SBATCH --mem=20G           # Memory in total
+#SBATCH --mem=100G           # Memory in total
 #SBATCH --nodes=1          # Number of nodes requested.
 #SBATCH --cpus-per-task=2  # Number of cores per task.
 #SBATCH --gres=gpu:1 # 32G V100
