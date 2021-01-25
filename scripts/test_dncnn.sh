@@ -4,7 +4,7 @@
 
 #SBATCH --time=0-3:00:0  # Time: D-H:M:S
 #SBATCH --account=def-keli # Account
-#SBATCH --mem=100G           # Memory in total
+#SBATCH --mem=150G           # Memory in total
 #SBATCH --nodes=1          # Number of nodes requested.
 #SBATCH --cpus-per-task=2  # Number of cores per task.
 #SBATCH --gres=gpu:1 # 32G V100
@@ -48,7 +48,7 @@ export PYTHONUNBUFFERED=1
 
 # Do all the research.
 #cp /scratch/nio/srim/HyperRIM/results/Test_HyperRIM_x16_25/n07745940_test_fid/*.png /scratch/nio/srim/HyperRIM/results/Test_HyperRIM_x16_25/n07745940_fid/
-python fid.py /project/6054857/nio/srim/DnCNN/results/RAISE-1K_1_fid_dncnn_25/ /project/6054857/nio/srim/data/RAISE-1K/ --gpu 0 -i /project/6054857/nio/srim/TTUR/
+python fid.py /project/6054857/nio/srim/DnCNN/results/RAISE-1K_1_fid_dncnn_25/ /project/6054857/nio/srim/data/RAISE-1K/ --gpu 0 -i /project/6054857/nio/srim/TTUR/ --lowprofile
 
 # Print completion time.
 date
